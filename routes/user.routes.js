@@ -1,6 +1,7 @@
-import { Router } from "express";
-import { createResena , getAllResenas } from "../controllers/resenas.controller.js";
+import {Router} from "express";
 //import { createAdminUser, deleteAdminUser, getAllAdminUser, getOneAdminUser, loginAdminUser, updateAdminUser, verificarAlbumes } from "../controllers/adminUser.controller.js";
+import { createUser } from "../controllers/user.controller.js";
+
 
 /* export const adminUserRoutes = Router()
                                 .get('/verificarAlbumes', verificarAlbumes)
@@ -11,6 +12,5 @@ import { createResena , getAllResenas } from "../controllers/resenas.controller.
                                 .delete('/deleteAdminUser',deleteAdminUser)
                                 .post('/loginAdminUser',loginAdminUser); */
 
-export const resenasRoutes = Router()
-                                .post("/createResena", createResena)
-                                .get('/getAllResenas',getAllResenas)
+export const userRoutes = Router()
+                            .post('/createUser',createUser)
