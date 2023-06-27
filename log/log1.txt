@@ -1,0 +1,8 @@
+{"msg":"Recuperando Reseñas...","docs":{"docs":[{"_id":"649a3883fecd041dc04f5ee6","idUser":{"_id":"6498d50c35a9471dce6335eb","name":"Ramiro Ocamp>
+{"msg":"Recuperando Reseñas...","docs":{"docs":[{"_id":"649a3883fecd041dc04f5ee6","idUser":{"_id":"6498d50c35a9471dce6335eb","name":"Ramiro Ocamp>
+{"msg":"Recuperando Reseñas...","docs":{"docs":[{"_id":"649a3883fecd041dc04f5ee6","idUser":{"_id":"6498d50c35a9471dce6335eb","name":"Ramiro Ocamp>
+{"msg":"Recuperando Reseñas...","docs":{"docs":[{"_id":"649a3883fecd041dc04f5ee6","idUser":{"_id":"6498d50c35a9471dce6335eb","name":"Ramiro Ocamp>
+{"msg":"Login userPediatra:...","dataUser":{"_id":"6498d50c35a9471dce6335eb","name":"Ramiro Ocampo Rodriguez","avatarUrl":"https://lh3.googleuser>
+{"msg":"Creando Reseña","newResena":{"idUser":"6498d50c35a9471dce6335eb","comentario":"Prueba","rateExp":5,"_id":"649a39c7ee29ac2e26951008","crea>
+{"msg":"Recuperando Reseñas...","docs":{"docs":[{"_id":"649a39c7ee29ac2e26951008","idUser":{"_id":"6498d50c35a9471dce6335eb","name":"Ramiro Ocamp>
+
