@@ -44,6 +44,7 @@ export const getAllResenas = async(req,res)=>{
         const options={
             page:1,
             limit:10,
+            sort:{createdAt:'asc'},
             populate: "idUser"
         };
       await Resena.paginate(query, options, (err, docs) => {
@@ -55,7 +56,7 @@ export const getAllResenas = async(req,res)=>{
             tempDocs?.docs?.reverse();
             objRes={
                 ...objRes,
-                docs:tempDocs
+                docs
             }
         }
         
@@ -74,6 +75,7 @@ export const getAllResenas = async(req,res)=>{
             ...objRes,
             error
         }
+        console.log(objRes);
         await addToLoggerFile(JSON.stringify(objRes))
         return res.status(500).json(objRes)
     }
