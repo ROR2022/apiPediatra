@@ -1,5 +1,6 @@
 import Resena from "../models/resenas.model.js";
 import User from "../models/user.model.js";
+import { addToLoggerFile } from "../lib/helperLib.js";
 
 
 export const createResena = async(req,res)=>{
@@ -19,6 +20,7 @@ export const createResena = async(req,res)=>{
                 addResenaUser
             }
         }
+        await addToLoggerFile(JSON.stringify(objRes))
         console.log(objRes);
         return res.status(200).json(objRes);
     } catch (error) {
@@ -27,6 +29,7 @@ export const createResena = async(req,res)=>{
             error
         }
         console.log(objRes);
+        await addToLoggerFile(JSON.stringify(objRes))
         return res.status(500).json(objRes);
     }
 }
@@ -61,6 +64,7 @@ export const getAllResenas = async(req,res)=>{
         }else{
             //console.log(objRes)
         }
+        addToLoggerFile(JSON.stringify(objRes))
         return res.status(200).json(objRes)
         
       });
@@ -70,6 +74,7 @@ export const getAllResenas = async(req,res)=>{
             ...objRes,
             error
         }
+        await addToLoggerFile(JSON.stringify(objRes))
         return res.status(500).json(objRes)
     }
 }

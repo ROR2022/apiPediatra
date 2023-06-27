@@ -23,7 +23,7 @@ export const createUser = async (req, res) => {
             userExist: true
           };
     }
-    
+    await addToLoggerFile(JSON.stringify(objRes))
     return res.status(200).json(objRes);
   } catch (error) {
     console.log(error);
@@ -31,6 +31,7 @@ export const createUser = async (req, res) => {
       ...objRes,
       error,
     };
+    await addToLoggerFile(JSON.stringify(objRes))
     return res.status(500).json(objRes);
   }
 };
