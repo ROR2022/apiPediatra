@@ -1,4 +1,5 @@
 import User from "../models/user.model.js";
+import { addToLoggerFile } from "../lib/helperLib.js";
 
 export const createUser = async (req, res) => {
   const { email } = req.body;
